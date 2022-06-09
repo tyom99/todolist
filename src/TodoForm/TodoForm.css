@@ -11,6 +11,11 @@
     background: #FAFAFC;
     border: 1px solid #C4CAD5;
     border-radius: 15px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #BBC5D7;
 }
 @media (max-width: 768px) {
     .InputWrapper {
@@ -19,7 +24,6 @@
 }
 .addTaskButton {
     margin-top: 16px;
-    box-sizing: border-box;
     width: 344px;
     height: 48px;
     left: 563px;
@@ -40,4 +44,16 @@
     .addTaskButton {
         height: 30px;
     }
+}
+.ButtonInnerContainer {
+    position: relative;
+}
+.TaskButtonTitle {
+    height: 18px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }

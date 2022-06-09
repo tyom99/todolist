@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="TodoMainWrapper">
-        <div className="TodoTitle">To Do</div>
+        <div className="TodoTitle">To&nbsp;Do</div>
             <div className="UpperContainer">
       <TodoList
           todos = {todos}

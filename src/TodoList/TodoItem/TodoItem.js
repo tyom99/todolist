@@ -21,7 +21,7 @@ export default function TodoItem({todo,onChange,onDelete,number}) {
                 </div>
                 <div className="RemoveButton" onClick={ ()=> {
                     onDelete(todo)
-                }}>&#10006;</div>
+                }}><div className="close"></div></div>
             </div>
         </div>
         </>

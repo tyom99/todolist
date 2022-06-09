@@ -15,7 +15,7 @@ export default function TodoForm({onAdd}){
             <input className="InputWrapper" type="text" value={text} onChange={(e)=>{
                 setText(e.target.value)
             }} />
-            <button className="addTaskButton">ADD</button>
+            <button className="addTaskButton"><div className="ButtonInnerContainer"><div className="TaskButtonTitle">ADD</div></div></button>
         </form>
             </>
     )

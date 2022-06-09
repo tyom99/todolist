@@ -1,15 +1,14 @@
 
 .ItemWrapper {
+    margin-top: 16px;
     box-sizing: border-box;
     width: 344px;
     height: 48px;
-    left: 563px;
-    top: 124px;
+    right: 172px;
     background: #FAFAFC;
     border: 1px solid #C4CAD5;
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
 }
 @media (max-width: 768px) {
     .ItemWrapper {
@@ -17,14 +16,15 @@
     }
 }
 .ItemInnerContainer {
-    width: 278px;
+    width: 328px;
     height: 20px;
     top:0;
     bottom: 0;
-    margin: auto;
+    margin: auto 0 auto 16px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items:stretch;
+    align-items: center;
 }
 .ItemLeftContainer {
     display: flex;
@@ -48,6 +48,7 @@
     vertical-align: middle;
     line-height: 19px;
     padding: 0;
+    margin-left: 12px;
 }
 .TaskNumber > span {
     margin-left: 3px;
@@ -56,7 +57,34 @@
 .RemoveButton {
     width: 12px;
     height: 12px;
+    padding: 0;
+    vertical-align: middle;
     text-align: center;
-    position: relative;
     cursor: pointer;
+    margin-right: 18px;
+    /*background: chartreuse;*/
+    position: relative;
 }
+/*--------------*/
+.close {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    content: ' ';
+    height: 12px;
+    width: 0.5px;
+    background-color: #697385;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
