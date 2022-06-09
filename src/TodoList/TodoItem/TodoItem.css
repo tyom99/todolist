@@ -62,10 +62,9 @@
     text-align: center;
     cursor: pointer;
     margin-right: 18px;
-    /*background: chartreuse;*/
     position: relative;
 }
-/*--------------*/
+
 .close {
     position: absolute;
     width: 12px;

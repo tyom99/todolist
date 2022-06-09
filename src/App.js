@@ -23,38 +23,37 @@ function App() {
         <div className="TodoMainContainer">
             <div className="UpperContainer">
                     <div className="TodoTitle">To&nbsp;Do</div>
-      <TodoList
-          todos = {todos}
-          onDelete={(todo)=>{
-            setTodos(todos.filter((t)=>t.id !== todo.id))
-          }}
-          onChange={(newTodo) => {
-              setTodos(todos.map((todo)=>{
-                  if(todo.id === newTodo.id) {
-                      return newTodo
-                  }
-                  return todo
-              }))
-            }
-          }
-      />
-    </div>
-        {/*</div>*/}
-        <div className="FooterContainer">
-        <TodoForm onAdd={(text)=>{
-            setTodos([
-                ...todos,
-                {
-                    id:Math.random(),
-                    text: text,
-                    isCompleted: false
-                }
-            ])
-        }}/>
-        <TodoFooter todos={todos}/>
-        </div>
-            </div>
-    </div>
+                        <TodoList
+                          todos = {todos}
+                          onDelete={(todo)=>{
+                            setTodos(todos.filter((t)=>t.id !== todo.id))
+                          }}
+                          onChange={(newTodo) => {
+                              setTodos(todos.map((todo)=>{
+                                  if(todo.id === newTodo.id) {
+                                      return newTodo
+                                  }
+                                  return todo
+                              }))
+                            }
+                          }
+                      />
+                 </div>
+                    <div className="FooterContainer">
+                    <TodoForm onAdd={(text)=>{
+                        setTodos([
+                            ...todos,
+                            {
+                                id:Math.random(),
+                                text: text,
+                                isCompleted: false
+                            }
+                        ])
+                    }}/>
+                    <TodoFooter todos={todos}/>
+                             </div>
+                        </div>
+                </div>
   );
 }
 

@@ -31,16 +31,11 @@
   left: 563px;
   }
 }
-/*@media (max-width: 768px) {*/
-/*  .TodoMainWrapper  {*/
-/*    align-items: center;*/
-/*  }*/
-/*}*/
+
 .UpperContainer {
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
-  /*width: 100%;*/
 }
 
 .FooterContainer {
