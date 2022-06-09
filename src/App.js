@@ -20,8 +20,9 @@ function App() {
 
   return (
     <div className="TodoMainWrapper">
-        <div className="TodoTitle">To&nbsp;Do</div>
+        <div className="TodoMainContainer">
             <div className="UpperContainer">
+                    <div className="TodoTitle">To&nbsp;Do</div>
       <TodoList
           todos = {todos}
           onDelete={(todo)=>{
@@ -38,6 +39,7 @@ function App() {
           }
       />
     </div>
+        {/*</div>*/}
         <div className="FooterContainer">
         <TodoForm onAdd={(text)=>{
             setTodos([
@@ -51,6 +53,7 @@ function App() {
         }}/>
         <TodoFooter todos={todos}/>
         </div>
+            </div>
     </div>
   );
 }

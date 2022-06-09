@@ -8,6 +8,14 @@
   color: #000000;
   margin-bottom: 8px;
   margin-top: 72px;
+  text-align: center;
+  margin-left: 0;
+}
+@media(min-width: 1496px) {
+  .TodoTitle{
+    text-align: left;
+    margin-left: 126px;
+  }
 }
 .TodoMainWrapper{
   height: 100vh;
@@ -17,9 +25,22 @@
   display: flex;
   flex-direction: column;
 }
+@media(min-width: 1496px) {
+.TodoMainContainer{
+  position: absolute;
+  left: 563px;
+  }
+}
+/*@media (max-width: 768px) {*/
+/*  .TodoMainWrapper  {*/
+/*    align-items: center;*/
+/*  }*/
+/*}*/
 .UpperContainer {
   display: flex;
+  flex-direction: column;
   padding-bottom: 30px;
+  /*width: 100%;*/
 }
 
 .FooterContainer {
