@@ -6,7 +6,7 @@ export default function TodoFooter({todos}) {
 
     return(
         <div className="FooterWrapper">
-            <span>  Completed Tasks&ensp;=&ensp;{completedSize}&ensp;All Tasks&ensp;=&ensp;{todos.length} </span>
+            <div><span>Completed Tasks&ensp;=&ensp;{completedSize}&ensp;All Tasks&ensp;=&ensp;{todos.length}</span></div>
         </div>
     )
 }

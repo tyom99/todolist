@@ -1,3 +1,17 @@
-.FooterWrapper{
+.FooterWrapper  {
+    margin-left: 563px;
+}
+.FooterWrapper >div {
+    text-align: start;
     margin-top: 30px;
+}
+@media(max-width: 1495px) {
+    .FooterWrapper{
+        margin: 0;
+        text-align: center;
+    }
+    .FooterWrapper > div {
+        text-align: center;
+        margin-top: 30px;
+    }
 }

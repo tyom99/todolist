@@ -22,6 +22,7 @@ function App() {
     <div className="TodoMainWrapper">
         <div className="TodoMainContainer">
             <div className="UpperContainer">
+                <div className="TodosContainer">
                     <div className="TodoTitle">To&nbsp;Do</div>
                         <TodoList
                           todos = {todos}
@@ -38,6 +39,7 @@ function App() {
                             }
                           }
                       />
+                </div>
                  </div>
                     <div className="FooterContainer">
                     <TodoForm onAdd={(text)=>{

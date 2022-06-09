@@ -25,24 +25,36 @@
   display: flex;
   flex-direction: column;
 }
+.TodoMainContainer {
+  width: 100%;
+}
 @media(min-width: 1496px) {
 .TodoMainContainer{
   position: absolute;
-  left: 563px;
+  width: 100%;
   }
 }
 
 .UpperContainer {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   padding-bottom: 30px;
+  /*align-items: center;*/
+  /*left: 563px;*/
 }
-
+.TodosContainer {
+  margin-left: 563px;
+  align-items: center;
+}
+@media(max-width: 1495px) {
+  .TodosContainer{
+    margin: 0 auto;
+  }
+}
 .FooterContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
   padding-top: 30px;
   border-top: 1px solid rgba(234, 234, 234, 1);
 }
