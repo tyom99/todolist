@@ -1,0 +1,43 @@
+
+.FormWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.InputWrapper {
+    box-sizing: border-box;
+    width: 344px;
+    height: 48px;
+    background: #FAFAFC;
+    border: 1px solid #C4CAD5;
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .InputWrapper {
+        height: 30px;
+    }
+}
+.addTaskButton {
+    margin-top: 16px;
+    box-sizing: border-box;
+    width: 344px;
+    height: 48px;
+    left: 563px;
+    top: 360px;
+    background: #FAFAFC;
+    border: 1px solid #C4CAD5;
+    border-radius: 15px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FC5F5F;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .addTaskButton {
+        height: 30px;
+    }
+}

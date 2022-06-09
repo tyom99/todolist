@@ -1,0 +1,62 @@
+
+.ItemWrapper {
+    box-sizing: border-box;
+    width: 344px;
+    height: 48px;
+    left: 563px;
+    top: 124px;
+    background: #FAFAFC;
+    border: 1px solid #C4CAD5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .ItemWrapper {
+        height: 30px;
+    }
+}
+.ItemInnerContainer {
+    width: 278px;
+    height: 20px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+}
+.ItemLeftContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CheckBox {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+.TaskNumber{
+    width: 47px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 19px;
+    padding: 0;
+}
+.TaskNumber > span {
+    margin-left: 3px;
+}
+
+.RemoveButton {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
